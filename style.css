@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor1: #010B40;
+    --cor2: #034C8C;
+    --cor3: #FFAB38;
+    --cor4: #F08401;
+}
+
+body{
+    font: normal normal 16px Arial, Helvetica, sans-serif;
+    background: rgb(255, 255, 255) url('imagens/Maicon/Fundo-2.png') repeat-x;
+    
+}
+
+/* Formatações Gerais*/
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+h2{
+    font-size: 1.3em;
+    background-color: var(--cor2);
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+hr{
+ margin: 3px 0;
+}
+
+/* Classes*/
+
+.fundo:hover{
+    background-color: #ffee00;
+}
+
+.laranja{
+    color: white;
+    text-decoration: none;
+}
+
+.laranja:hover{
+    color: var(--cor4);
+    font-weight: bold;
+    background-color: white;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.564);
+    transition-duration: 0.1s;
+}
+
+.logo{
+    width: 200px;
+    height: 80px;
+    background: url('imagens/Maicon/Maicon.png');
+    text-indent: -3000px;
+}
+
+.caixa-conteudo{
+    background-color: white;
+    padding: 5px;
+    margin-top: 7px;
+}
+
+.titulo-caixa{
+    background-color: #1e6099;
+    color: white;
+    text-transform: uppercase;
+    display: inline;
+    font-size: 1em;
+    padding: 3px;
+}
+
+body.home ul#nav a#home,
+body.projetos ul#nav a#projeto,
+body.leis ul#nav a#leis,
+body.viagens ul#nav a#viagem,
+body.campos ul#nav a#campos,
+body.fotos ul#nav a#fotos,
+body.recente ul#nav a#recente,
+body.noticia ul#nav a#noticia{
+    color: #f08401;
+    background-color: #ffffff;
+    cursor: text;
+}
+
+.leia{
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+.leia:hover{
+    background: url('imagens/Maicon/seta.png') no-repeat left center;
+    padding-left: 20px;
+}
+
+.resumo{
+    padding: 3px 0 4px 0;
+}
+
+/* IDs */
+
+
+
+div#principal{
+    width: 750px;
+    margin: 0 auto;
+}
+
+div#topo{
+    height: 150px;
+    padding-top: 10px;
+    padding-bottom: 71px;
+    background: url('imagens/Maicon/Maicon-Fundo.png ') no-repeat right top;
+    margin: 0px auto;
+}
+
+ul#nav{
+    background-color: #f08401;
+    margin-top: 20px;
+    float: left;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.294);
+}
+
+ul#nav li{
+    float: left;
+}
+
+ul#nav li a{
+    font-size: 0.86em;
+    display: block;
+    padding: 0.9em 1.5em;
+    line-height: 2.1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border-right: 1px solid rgb(195, 129, 7);
+}
+
+ul#nav li a:hover{
+    background-color: #fdbd6e;
+}
+
+/* FIM DO TOPO */
+
+#conteudo{
+    margin-top: 4px;
+    background-color: lightgray;
+}
+
+#lateral{
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+}
+
+#primario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
+}
+
+#duas-colunas #primario{
+    width: 555px;
+}
+
+#uma-coluna #primario{
+    width: 750px;
+    margin: 0 0 20px 0;
+}
+
+#secundario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+}
+
+#fotos #principal .uma-foto{
+    width: 960px;
+}
+
+#fotos img{
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.6);
+}
+
+#fotos #principal{
+    width: 960px;
+}
+
+#fotos .caixa{
+    padding: 5px 6px 3px 6px;
+}
+
+#fotos #primario{
+    width: 320px;
+    padding: 0px;
+    margin: 0px;
+}
+#fotos #secundario{
+    width: 320px;
+    padding: 0px;
+    margin: 0px;
+}
+#fotos #lateral{
+    width: 320px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Fim Das Colunas */
+
+.caixa{
+    margin: 10px 0;
+    padding: 5px;
+    background: #f3f3f3 url('imagens/fundo-caixa.png');
+}
+
+
+/* FIM DO CONTEUDO */
+
+#container-rodape{
+    background-color: var(--cor4);
+    padding: 20px;
+}
+
+#rodape{
+    width: 750px;
+    margin: 0 auto;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* Menus Laterais Abaixo */
+
+#lateral #lista-recentes a{
+    line-height: 20px;
+}
+
+
+#lateral ul a{
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover{
+    background: #f9f9f9 url('imagens/Maicon/marcador.png') no-repeat left center;
+    font-weight: bold;
+    color: var(--cor4);
+    padding-left: 20px;
+}
+
+#noticias li{
+    padding: 2px;
+    height: 66px;
+}
+
+#noticias li a img{
+    float: left;
+    margin: 5px;
+
+}
+
+#noticias li a {
+    text-decoration: none;
+}
+
+#noticias li a h3{
+    font-size: 0.9em;
+    color: var(--cor1);
+}
+
+#noticias li a p{
+    font-size: 0.8em;
+}
+
+#noticias li:hover{
+    background-color: #fffaf4;
+    a{
+        color: var(--cor4);
+        font-weight: bold;
+    }
+}
+
