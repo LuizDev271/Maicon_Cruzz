@@ -70,6 +70,12 @@ hr{
     margin-top: 7px;
 }
 
+.caixa-conteudo-lei{
+    background-color: white;
+    padding: 0;
+    margin-top: 0px;
+}
+
 .titulo-caixa{
     background-color: #1e6099;
     color: white;
@@ -107,8 +113,6 @@ body.noticia ul#nav a#noticia{
 }
 
 /* IDs */
-
-
 
 div#principal{
     width: 750px;
@@ -151,6 +155,7 @@ ul#nav li a:hover{
 
 /* FIM DO TOPO */
 
+
 #conteudo{
     margin-top: 4px;
     background-color: lightgray;
@@ -168,8 +173,17 @@ ul#nav li a:hover{
     margin: 0 0 20px 195px;
 }
 
+#duas-colunas #topo{
+    width: 850px;
+    margin: 0px auto;
+}
+
 #duas-colunas #primario{
-    width: 555px;
+    width: 655px;
+}
+
+#duas-colunas #lateral{
+    margin: 0 0 20px -850px;
 }
 
 #uma-coluna #primario{
