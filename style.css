@@ -52,6 +52,7 @@ hr{
 .laranja:hover{
     color: var(--cor4);
     font-weight: bold;
+    border-radius: 5px;
     background-color: white;
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.564);
     transition-duration: 0.1s;
