@@ -123,7 +123,7 @@ div#topo{
     height: 150px;
     padding-top: 10px;
     padding-bottom: 71px;
-    background: url('imagens/Maicon/Maicon-Fundo.png ') no-repeat right top;
+    background: url('imagens/Maicon/Maicon-Fundo.png') no-repeat right top;
     margin: 0px auto;
 }
 
@@ -309,3 +309,90 @@ ul#nav li a:hover{
     }
 }
 
+@media (max-width: 575.98px){
+    div#principal{
+        width: 410px;
+    }
+
+    div#topo{
+        margin-left: 25px;
+    }
+
+    #lateral{
+        display: none;
+    }
+
+    #primario{
+        margin: 0;
+        float: none;
+    }
+
+    #secundario{
+        margin: 0;
+    }
+
+    #conteudo{
+        width: 300px;
+        background-color: white;
+    }
+
+    div#topo > ul#nav > li > a#fotos{
+        display: none;
+    }
+
+    div#topo > ul#nav > li > a#viagem{
+        display: none;
+    }
+
+    #rodape{
+        width: 324px;
+    }
+
+    #duas-colunas div#principal{
+        width: 410px;
+    }
+
+    #duas-colunas div#topo{
+        width: 410px;
+        margin-left: 25px;
+    }
+
+    #duas-colunas #lateral{
+        display: none;
+    }
+
+    #duas-colunas #primario{
+        margin: 0;
+        float: none;
+    }
+
+    #duas-colunas #secundario{
+        margin: 0;
+    }
+
+    #duas-colunas #conteudo{
+        width: 300px;
+        background-color: white;
+    }
+
+    #duas-colunas div#topo > ul#nav > li > a#fotos{
+        display: none;
+    }
+
+    #duas-colunas div#topo > ul#nav > li > a#viagem{
+        display: none;
+    }
+
+    #duas-colunas #rodape{
+        width: 324px;
+    }
+
+    /*Classes
+    ------------------------*/
+    .caixa{
+        margin: 15px 20px 15px 35px;
+        width: 320px;
+    }
+
+
+}
