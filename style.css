@@ -322,7 +322,7 @@ ul#nav li a:hover{
     }
 
     div#topo{
-        margin-left: 25px;
+        margin-left: 30px;
     }
 
     #lateral{
@@ -364,8 +364,8 @@ ul#nav li a:hover{
     }
 
     #duas-colunas div#topo{
-        width: 385px;
-        margin-left: 25px;
+        width: 380px;
+        margin-left: 30px;
     }
 
     #duas-colunas #lateral{
@@ -403,12 +403,12 @@ ul#nav li a:hover{
     ------------------------*/
     .caixa{
         margin: 15px 20px 15px 35px;
-        width: 320px;
+        width: 335px;
     }
 
     #duas-colunas .caixa{
         margin: 15px 20px 15px 35px;
-        width: 320px;
+        width: 335px;
     }
 
     .aparecer{
