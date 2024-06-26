@@ -2,7 +2,7 @@
 
 @font-face{
     font-family: Maicon;
-    src: url(fontes);
+    src: url(font/Bondrians.woff);
 }
 
 *{
@@ -58,11 +58,10 @@ hr{
 }
 
 .laranja:hover{
-    color: var(--cor4);
+    color: white;
     font-weight: bold;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.564);
+    text-decoration: underline;
+    text-shadow: none;
     transition-duration: 0.1s;
 }
 
@@ -262,7 +261,7 @@ ul#nav li a:hover{
 
 #container-rodape{
     background-color: var(--cor4);
-    padding: 20px;
+    padding: 20px 0;
 }
 
 #rodape{
@@ -271,6 +270,7 @@ ul#nav li a:hover{
     color: white;
     font-weight: bolder;
     text-align: center;
+    text-shadow: 2px 2px 2px #000000b0;
 }
 
 /* Menus Laterais Abaixo */
@@ -330,6 +330,40 @@ ul#nav li a:hover{
     a{
         color: #F08401;
         font-weight: bold;
+    }
+}
+
+/*Letreiro
+---------------*/
+#letreiro{
+    display: flex;
+    white-space: nowrap;
+}
+
+#letreiro .container-letreiro{
+    overflow: hidden;
+}
+
+#letreiro h1{
+    color: white;
+    letter-spacing: 5px;
+
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px black;
+
+    font-family: Maicon;
+    font-size: 5.5em;
+
+    animation: rolagem 50s infinite linear alternate-reverse;
+}
+
+@keyframes rolagem{
+    from{
+        transform: translateX(0%);
+    }
+
+    to{
+        transform: translateX(-400%);
     }
 }
 
