@@ -6,8 +6,20 @@
     <title>Maicon Cruzz</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+
+    <style>
+        span{
+            padding-right: 25px;
+        }
+
+        .itens-listas:hover{
+            color: #f08401;
+            font-weight: bold;
+        }
+    </style>
+
 </head>
-<body id="duas-colunas" class="recente">
+<body id="duas-colunas" class="recente" onload="definirNoticia()">
 
     <div id="principal">
         <!-- Inicio do Topo -->
@@ -17,7 +29,7 @@
                 <li><a id="home" href="../index.html">Home</a></li>
                 <li><a id="noticia" href="../paginas/noticiais.html">Notícias</a></li>
                 <li><a id="projeto" href="../paginas/projetos.html">Leis</a></li>
-                <li><a id="recente" href="">Recentes</a></li>
+                <li><a id="recente" href="#">Recentes</a></li>
                 <li><a id="viagem" href="../paginas/viagens.html">Sobre</a></li>
                 <li><a id="fotos" href="../paginas/fotos.html">Fotos</a></li>
             </ul>
@@ -26,9 +38,16 @@
 
             <div class="aparecer" id="primario">
                 <div class="caixa">
-                    <h2>Maicon Cruzz Eleito</h2>
+                    <h2 id="sub-titulo">Maicon Cruzz Eleito</h2>
                     <div class="caixa-conteudo">
-                        <img src="../imagens/Maicon/Fotos/Primeiro.jpg" width="100%" alt="maiconc cruz eleito primeiro">
+                        <p id="paragrafo-principal"></p>
+
+                        <img id="imagem-principal" src="../imagens/Maicon/Fotos/Primeiro.jpg" width="100%" alt="maiconc cruz eleito primeiro">
+                        <div id="video"></div>
+
+                        <p id="sub-paragrafo"></p>
+                        <p id="referencia"></p>
+                        <p id="link"></p>
                     </div>
                 </div>
             </div>
@@ -183,23 +202,23 @@
                     <h2>Atividades Recentes</h2>
                     <div class="caixa-conteudo">
                         <ul id="lista-recentes" style="padding: 6px;">
-                            <li><a style="padding: 8px; background: white;" href="../recentes/1_segurança_Escolar.html">1- Segurança nas escolas de Campos</a></li>
+                            <li class="itens-listas" onclick="Seguranca()" style="padding: 10px; border-bottom: 1px solid gainsboro;font-size: 14px; cursor: pointer;">1- Segurança nas escolas de Campos</li>
 
-                            <li><a style="padding: 8px; background: white;" href="../recentes/2_turismo.html">2- Investimento em Turismo em Campos</a></li>
+                            <li class="itens-listas" onclick="Turismo()" style="padding: 10px; border-bottom: 1px solid gainsboro;font-size: 14px; cursor: pointer;">2- Investimento em Turismo em Campos</li>
 
-                            <li><a style="padding: 8px; background: white;" href="../recentes/3_emendas.html">3- Emendas parlamentares no município de Campos</a></li>
+                            <li class="itens-listas" onclick="Emendas()" style="padding: 10px; border-bottom: 1px solid gainsboro;font-size: 14px; cursor: pointer;">3- Emendas parlamentares no município de Campos</li>
 
-                            <li><a style="padding: 8px; background: white;" href="../recentes/4_defesa_animais.html">4- Projeto Proteção e Defesa dos Animais</a></li>
+                            <li class="itens-listas" onclick="Defesa()" style="padding: 10px; border-bottom: 1px solid gainsboro;font-size: 14px; cursor: pointer;">4- Projeto Proteção e Defesa dos Animais</li>
 
-                            <li><a style="padding: 8px; background: white;" href="../recentes/5_gincana_negra.html">5- Maicon Cruzz Promove Gincana da Consc. Negra</a></li>
+                            <li class="itens-listas" onclick="Gincana()" style="padding: 10px; border-bottom: 1px solid gainsboro;font-size: 14px; cursor: pointer;">5- Maicon Cruzz Promove Gincana da Consc. Negra</li>
 
-                            <li><a style="padding: 8px; background: white;" href="../recentes/6_piso_salarial.html">6- Cumprimento do piso salarial do magistério em Brasília</a></li>
+                            <li class="itens-listas" onclick="Piso()" style="padding: 10px; border-bottom: 1px solid gainsboro;font-size: 14px; cursor: pointer;">6- Cumprimento do piso salarial do magistério em Brasília</li>
 
-                            <li><a style="padding: 8px; background: white;" href="../recentes/7_programa_escolar.html">7- “Programa Escola em Tempo Integral”, em Campos</a></li>
+                            <li class="itens-listas" onclick="Programa()" style="padding: 10px; border-bottom: 1px solid gainsboro;font-size: 14px; cursor: pointer;">7- “Programa Escola em Tempo Integral”, em Campos</li>
 
-                            <li><a style="padding: 8px; background: white;" href="../recentes/8_homengamem.html">8- Atleta campista é homenageada na Câmara Municipal</a></li>
+                            <li class="itens-listas" onclick="Homenagem()" style="padding: 10px; border-bottom: 1px solid gainsboro;font-size: 14px; cursor: pointer;">8- Atleta campista é homenageada na Câmara Municipal</li>
 
-                            <li><a style="padding: 8px; background: white;" href="../recentes/9_voto_contrario.html">9- Voto contrário ao Código Tributário</a></li>
+                            <li class="itens-listas" onclick="Voto()" style="padding: 10px; border-bottom: 1px solid gainsboro;font-size: 14px; cursor: pointer;">9- Voto contrário ao Código Tributário</li>
                         </ul>
                     </div>
                 </div>
@@ -219,6 +238,8 @@
             </div>
         </div>
     </div> <!-- Fim do Rodape-->
+
+    <script src="../scripts.js"></script>
     
 </body>
 </html>
