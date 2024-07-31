@@ -16,7 +16,7 @@
             <ul id="nav">
                 <li><a id="home" href="../index.html ">Home</a></li>
                 <li><a id="noticia" href="../paginas/noticiais.html">Notícias</a></li>
-                <li><a id="projeto" href="">Leis</a></li>
+                <li><a id="projeto" href="#">Leis</a></li>
                 <li><a id="recente" href="../paginas/recentes.html">Recentes</a></li>
                 <li><a id="viagem" href="../paginas/viagens.html">Sobre</a></li>
                 <li><a id="fotos" href="../paginas/fotos.html">Fotos</a></li>
@@ -28,7 +28,7 @@
                 <div class="caixa">
                     <h2>Maicon Cruzz Eleito</h2>
                     <div class="caixa-conteudo">
-                        <img src="../imagens/Maicon/Fotos/Primeiro.jpg" width="100%" alt="cruzz secretario eleito">
+                        <img id="imagem-principal" src="../imagens/Maicon/Fotos/Primeiro.jpg" width="100%" alt="cruzz secretario eleito">
                     </div>
                 </div>
             </div>
@@ -79,12 +79,12 @@
                     <h2>Leis Aprovadas</h2>
                     <div class="caixa-conteudo">
                         <ul>
-                            <li><a href="../leis/03.html">Anteprojeto 03/2021</a></li>
-                            <li><a href="../leis/9249.html">Lei 9249/2022</a></li>
-                            <li><a href="../leis/0265.html">Lei 0265/2023</a></li>
-                            <li><a href="../leis/9423.html">Lei 9423/2023</a></li>
-                            <li><a href="../leis/9386.html">Lei 9386/2023</a></li>
-                            <li><a href="../leis/leis.html">Mais algumas Leis</a></li>
+                            <li><a onclick="anteProjeto()" href="#">Anteprojeto 03/2021</a></li>
+                            <li><a onclick="n9249()" href="#">Lei 9249/2022</a></li>
+                            <li><a onclick="n0265()" href="#">Lei 0265/2023</a></li>
+                            <li><a onclick="n9423()" href="#">Lei 9423/2023</a></li>
+                            <li><a onclick="n9386()" href="#">Lei 9386/2023</a></li>
+                            <li><a onclick="maisLeis()" href="#">Mais algumas Leis</a></li>
                         </ul>
                     </div>
                 </div>
@@ -105,6 +105,6 @@
         </div>
     </div> <!-- Fim do Rodape-->
 
-
+    <script src="../leis.js"></script>
 </body>
 </html>
